@@ -36,6 +36,22 @@ const css = `
 .di-autocomplete-header-label {
     display: inline-block !important;
 }
+.avatar-large[style*="/a_"]+.comment .username-wrapper:before {
+    background: url('https://canary.discordapp.com/assets/65f0a0df5563e21de7b1aeeafaf31d78.svg') 50% 50% / contain no-repeat;
+    float:left;
+    content: '';
+    width: 21px;
+    height: 16px;
+    margin: 0 5px 0 -5px;
+}
+.avatar-small[style*="/a_"]+.member-inner .member-username:before {
+    background: url('https://canary.discordapp.com/assets/65f0a0df5563e21de7b1aeeafaf31d78.svg') 50% 50% / contain no-repeat;
+    float:left;
+    content: '';
+    width: 21px;
+    height: 16px;
+    margin: 0 5px 0 -5px;
+}
 `;
 
 class CommandHandler {
